@@ -46,3 +46,16 @@ The template shows how to:
 ```bash
 dotnet new console -n MysqlToSqlServerBulkMigration
 cd MysqlToSqlServerBulkMigration
+
+## Install the required NuGet packages:
+# MySQL driver
+dotnet add package MySqlConnector
+
+# SQL Server driver (SqlBulkCopy)
+dotnet add package Microsoft.Data.SqlClient
+
+# Configuration (appsettings.json + env vars + strongly-typed binding)
+dotnet add package Microsoft.Extensions.Configuration
+dotnet add package Microsoft.Extensions.Configuration.Json
+dotnet add package Microsoft.Extensions.Configuration.EnvironmentVariables
+dotnet add package Microsoft.Extensions.Configuration.Binder
